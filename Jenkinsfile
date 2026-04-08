@@ -4,7 +4,7 @@ pipeline {
     environment {
         CONTAINER_NAME = "nestjs-app"
         IMAGE_NAME = "nesths-image"
-        EMAIL = "techzeen10@gmail.com"
+        EMAIL = "faiyazkhanpc5676@gmail.com"
         PORT = "3000"
     }
 
@@ -40,7 +40,7 @@ pipeline {
                emailext(
                 subject: "NestJS App Deployed Successfully on EC2!",
                 body: "Your Nest JS app is Deployed! http://13.62.46.106:${PORT}/",
-                to: "${EMAIL}"
+                to: "faiyazkhanpc5676@gmail.com"
                )
             }
         }
